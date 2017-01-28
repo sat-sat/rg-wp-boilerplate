@@ -1,3 +1,5 @@
 import yargs from 'yargs'
 import requireDir from 'require-dir'
-requireDir('./tasks')
+
+process.env.NODE_ENV = process.env.NODE_ENV || yargs.argv.env || 'development'
+requireDir('./tools/tasks')
