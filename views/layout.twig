@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta rel="pingback" href="{{site.pingback_url}}">{{ function('wp_head') }}
   </head>
-  <body class="{{body_class}} {{ post.slug }}" data-template="layout.twig"><span class="svg-sprite">
+  <body class="{{body_class}} {{ post.slug }}" data-template="base.twig"><span class="svg-sprite">
       {% include '/icons/color.svg' %}
       {% include '/icons/no-color.svg' %}</span>
     <header class="header">{% block header %}
@@ -33,7 +33,7 @@
       </div>{% if sidebar %}
       <aside class="layout-sidebar">{{sidebar}}</aside>{% endif %}
     </main>{% block footer %}
-    <footer id="footer"></footer>
+    <footer id="footer">{% include 'components/footer-main.twig' %}</footer>
     {{ function('wp_footer') }}
     {% endblock %}
   </body>
