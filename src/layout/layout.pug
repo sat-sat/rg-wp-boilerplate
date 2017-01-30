@@ -26,8 +26,7 @@ html(lang='{{site.charset}}')
     //-   });}catch(e){}
     | {{ function('wp_head') }}
 
-  body(class='{{body_class}} {{ post.slug }}' data-template='layout.twig')
-    - var url = root
+  body(class='{{body_class}} {{ post.slug }}' data-template='base.twig')
     span.svg-sprite
       | {% include '/icons/color.svg' %}
       | {% include '/icons/no-color.svg' %}
@@ -55,6 +54,6 @@ html(lang='{{site.charset}}')
 
     | {% block footer %}
     footer#footer
-      //- | {% include 'components/footer.twig' %}
+      | {% include 'components/footer-main.twig' %}
     | {{ function('wp_footer') }}
     | {% endblock %}

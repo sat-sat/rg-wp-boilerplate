@@ -2,8 +2,8 @@
 
 | {% block content %}
 section(id='post-{{post.ID}}' class='post-type-{{post.post_type}}')
-	//- | {{post.title}}
+	| {{post.title}}
 	| {% for post in posts %}
-	| {% include ['custom-preview-'~post.post_type~'.twig', 'custom-preview.twig'] %}
+	| {% include ['components/custom-preview-'~post.post_type~'.twig', 'components/custom-preview.twig'] %}
 	| {% endfor %}
 | {% endblock %}
