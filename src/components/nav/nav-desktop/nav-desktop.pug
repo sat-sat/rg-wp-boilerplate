@@ -1,0 +1,11 @@
+.nav-desktop
+  .nav-desktop__container
+    .nav-desktop__row
+      .nav-desktop__col
+        .nav-desktop__logo
+          a(href=root)
+            //- svg
+            //-   use(xlink:href='#client-logo')
+            //- img(src='{{ img }}/client-logo.png')
+        nav.nav-desktop__menu
+          | {% include 'components/menu-desktop.twig' with {'menu': menu.get_items} %}

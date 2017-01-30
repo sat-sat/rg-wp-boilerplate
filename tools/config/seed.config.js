@@ -24,10 +24,14 @@ export const client = {
 		vendors: ['node_modules/foundation-sites/scss/foundation.scss']
 	},
 	views: {
-		inputViews: ['src/layout/base.pug', 'src/pages/**/*.pug'],
-		inputComponents: ['src/components/**/*.pug'],
-		outputViews: 'views',
-		outputComponents: 'views/components',
+		input: {
+			layouts: ['src/layout/layout.pug', 'src/pages/**/*.pug'],
+			components: ['src/components/**/*.pug']
+		},
+		output: {
+			layouts: 'views',
+			components: 'views/components'
+		},
 		watch: ['src/**/*.pug']
 	},
 	fonts: {
