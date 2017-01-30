@@ -1,0 +1,52 @@
+.modal-container
+	position: relative
+	transition: 0.3s ease
+	visibility: hidden
+	opacity: 0
+	z-index: 30
+
+	&--open
+		visibility: visible
+		opacity: 1
+
+.modal
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 20
+	size: 100vw 100vh
+
+	&__overlay
+		position: absolute
+		top: 0
+		left: 0
+		background-color: $modal-overlay
+		size: 100%
+
+		&:hover
+			cursor: pointer
+
+	&__content
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+	&__close
+		position: absolute
+		top: rem-calc(10)
+		right: rem-calc(14)
+		transition: all 0.3s ease
+		color: $c7
+
+		&:hover
+			cursor: pointer
+
+	&__x-icon
+		display: inline-block
+		position: relative
+		top: rem-calc(1)
+		size: rem-calc(12)
+
+		svg
+			fill: $c8
