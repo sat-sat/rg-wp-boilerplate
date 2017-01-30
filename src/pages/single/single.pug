@@ -1,0 +1,27 @@
+| {% extends 'layout.twig' %}
+
+| {% block content %}
+.blog-single
+	article.blog-single__container(id='post-{{ post.ID }}' class='post-type-{{ post.post_type }}')
+		section.blog-single__content
+			h1.article-h1
+				| {{ post.title }}
+			p.blog-single__author
+				span By&amp;
+				a(href='{{post.author.path}}')
+					| {{ post.author.name }}
+				span &bull;&amp;
+				| {{ post.post_date | date }}
+			.blog-single__content
+				| {{ post.content }}
+		| {{% if post.comment_status !='closed' %}}
+		section.blog-single__comments
+			.blog-single__comment-form
+				h3.h2 Comments
+				| {{ fn('comment_form') }}
+			.blog-single__comment-responses
+				| {% for cmt in post.get_comments() %}
+				| {% include 'components/comment.twig' with { comment:cmt } %}
+				| {% endfor %}
+		| {% endif %}
+| {% endblock %}

@@ -1,0 +1,5 @@
+div.custom-comment(id='block-comment-{{ comment.ID }}' class='block-comment {{ comment.comment_type }}')
+	h5.custom-comment__author
+		| {{ comment.author.name }} says
+	.custom-comment__content
+		| {{ comment_content|wpautop }}

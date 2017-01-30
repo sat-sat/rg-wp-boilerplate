@@ -1,0 +1,13 @@
+| {% extends 'base.twig' %}
+
+| {% block content %}
+.custom-preview-post
+	h2.custom-preview-post__title
+		a(href='{{ post.link }}')
+			| {{ post.title }}
+	p.custom-preview-post__copy
+		| {{ post.get_preview(25) }}
+	| {% if post.thumbnail.src %}
+	img.custom-preview-post__image(src='{{ post.thumbnail.src }}')
+	| {% endif %}
+	| {% endblock %}

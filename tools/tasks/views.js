@@ -7,11 +7,12 @@ import browserSync from 'browser-sync'
 const $ = plugins()
 
 gulp.task('views-templates', () => {
-  return gulp.src(client.views.inputViews)
+  return gulp.src(client.views.input.layouts)
     .pipe($.data(function(file) {
       if (!options.minify) {
         return require('../data/env-dev.json')
       }
+
       return require('../data/env-prod.json')
     }))
     .pipe($.plumber())
@@ -25,14 +26,14 @@ gulp.task('views-templates', () => {
       f.extname = '.twig'
       return f
     }))
-    .pipe(gulp.dest(client.views.outputViews))
+    .pipe(gulp.dest(client.views.output.layouts))
     .pipe(browserSync.reload({
       stream: true
     }))
 })
 
 gulp.task('views-components', () => {
-  return gulp.src(client.views.inputComponents)
+  return gulp.src(client.views.input.components)
     .pipe($.data(function(file) {
       if (!options.minify) {
         return require('../data/env-dev.json')
@@ -50,7 +51,7 @@ gulp.task('views-components', () => {
       f.extname = '.twig'
       return f
     }))
-    .pipe(gulp.dest(client.views.outputComponents))
+    .pipe(gulp.dest(client.views.output.components))
     .pipe(browserSync.reload({
       stream: true
     }))
