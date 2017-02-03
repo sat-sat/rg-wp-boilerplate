@@ -6,11 +6,11 @@ function load_scripts() {
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
 
-function google_fonts() {
-	$query_args = array(
-		'family' => 'Source+Sans+Pro:300,400,500,600,700'
-	);
-	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
-            }
+// function google_fonts() {
+// 	$query_args = array(
+// 		'family' => 'Source+Sans+Pro:300,400,500,600,700'
+// 	);
+// 	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
+//             }
             
-add_action('wp_enqueue_scripts', 'google_fonts');
+// add_action('wp_enqueue_scripts', 'google_fonts');
