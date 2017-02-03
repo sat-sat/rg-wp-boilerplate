@@ -1,6 +1,6 @@
 import gulp from 'gulp'
 import plugins from 'gulp-load-plugins'
-import { client } from '../config/seed.config'
+import { client } from '../config/default'
 import browserSync from 'browser-sync'
 
 const $ = plugins()

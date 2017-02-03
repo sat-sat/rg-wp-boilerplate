@@ -1,6 +1,6 @@
 import gulp from 'gulp'
 import plugins from 'gulp-load-plugins'
-import { client, options } from '../config/seed.config'
+import { client, options } from '../config/default'
 // import postscssAssets from 'postcss-assets'
 import postcssNext from 'postcss-cssnext'
 import postcssShort from 'postcss-short'

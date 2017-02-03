@@ -1,7 +1,7 @@
 import gulp from 'gulp'
 import ftp from 'vinyl-ftp'
 import plugins from 'gulp-load-plugins'
-import { client, options } from '../config/seed.config'
+import { client, options } from '../config/default'
 
 const themePath = './goorthopasadena.roostertest3.com/wp-content/themes/Avada-Child-Theme'
 const $ = plugins()

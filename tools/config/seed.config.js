@@ -5,7 +5,7 @@ export const options = {
 export const client = {
 	lint: {
 		styles: {
-			input: ['src/main.sass', 'src/**/*.{scss,sass}', '!src/sass/_settings.scss', '!src/sass/vendors/**/*.{scss,sass}', 'src/sass/util/maps.sass']
+			input: ['src/main.sass', 'src/**/*.{scss,sass}', 'src/sass/util/maps.sass', '!src/sass/_settings.scss', '!src/sass/vendors/**/*.{scss,sass}']
 		},
 		scripts: {
 			input: ['gulpfile.babel.js', 'tasks/**/*.js', 'src/js/**/*.js']
@@ -20,7 +20,6 @@ export const client = {
 		input: ['src/main.sass'],
 		output: 'static/css',
 		watch: ['src/main.sass', 'src/**/*.{sass,scss}'],
-		ftp: ['css/*'],
 		vendors: ['node_modules/foundation-sites/scss/foundation.scss']
 	},
 	views: {
@@ -50,23 +49,5 @@ export const client = {
 		},
 		output: 'views/icons',
 		watch: 'src/icons/**/*.svg'
-	},
-	functions: {
-		input: ['functions.php'],
-		watch: ['functions.php'],
-		ftp: ['functions.php']
-	},
-	ftp: {
-		input: [
-			'functions/**/*',
-			'static/**/*',
-			'views/**/*',
-			'functions.php',
-			'index.php',
-			'page-home.php',
-			'page.php',
-			'screenshot.png',
-			'style.css'
-		]
 	}
 }
