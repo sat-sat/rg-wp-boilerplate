@@ -29,12 +29,12 @@ gulp.task('styles', ['sasslint'], () => {
       postcssShort,
       // # images
       // # https://github.com/assetsjs/postcss-assets
-      postscssAssets({
-        basePath: 'src/images',
-        baseUrl: options.minify ? assetPath : '/luxe' + assetPath,
-        // loadPaths: ['src/images', 'src/fonts'],
-        cachebuster: options.minify === true
-      }),
+      // postscssAssets({
+      //   basePath: 'src/images',
+      //   baseUrl: options.minify ? assetPath : '/luxe' + assetPath,
+      //   // loadPaths: ['src/images', 'src/fonts'],
+      //   cachebuster: options.minify === true
+      // }),
       // # css4 magic
       // # http://cssnext.io/features/
       postcssNext({
