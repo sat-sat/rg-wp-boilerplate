@@ -1,7 +1,7 @@
 // import $ from 'jquery'
 // import slick from 'slick-carousel'
 
-import { Person } from './components/person/person'
+import { Fog } from './components/components'
 
-const bob = new Person('Bob')
-bob.say('I love SF!!')
+const karl = new Fog('Karl')
+karl.say('I love SF!!')

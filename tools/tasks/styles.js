@@ -1,13 +1,15 @@
 import gulp from 'gulp'
 import plugins from 'gulp-load-plugins'
 import { client, options } from '../config/default'
-// import postscssAssets from 'postcss-assets'
+import postscssAssets from 'postcss-assets'
 import postcssNext from 'postcss-cssnext'
 import postcssShort from 'postcss-short'
 import postcssUniqueSelectors from 'postcss-unique-selectors'
 import browserSync from 'browser-sync'
 
 const $ = plugins()
+const projectRoot = '/rg-boilerplate'
+const assetPath = '/wp-content/themes/luxeremodel.com/static/images/'
 
 gulp.task('sasslint', () => {
   return gulp.src(client.lint.styles.input)
@@ -29,12 +31,12 @@ gulp.task('styles', ['sasslint'], () => {
       postcssShort,
       // # images
       // # https://github.com/assetsjs/postcss-assets
-      // postscssAssets({
-      //   basePath: 'src/images',
-      //   baseUrl: options.minify ? assetPath : '/luxe' + assetPath,
-      //   // loadPaths: ['src/images', 'src/fonts'],
-      //   cachebuster: options.minify === true
-      // }),
+      postscssAssets({
+        basePath: 'src/images',
+        baseUrl: options.minify ? assetPath : projectRoot + assetPath,
+        // loadPaths: ['src/images', 'src/fonts'],
+        cachebuster: options.minify === true
+      }),
       // # css4 magic
       // # http://cssnext.io/features/
       postcssNext({

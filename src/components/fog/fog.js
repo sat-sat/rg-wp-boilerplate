@@ -1,4 +1,4 @@
-export class Person {
+export class Fog {
   constructor (name) {
     this.name = name
   }

@@ -1,9 +1,12 @@
 <?php
 
+// include additional functionality -------------------------
 include_once(get_template_directory() . '/functions/enqueue.php');
 include_once(get_template_directory() . '/functions/admin-bar.php');
 include_once(get_template_directory() . '/functions/filters.php');
+include_once(get_template_directory() . '/functions/editor.php');
 
+// Timber functions -----------------------------------------
 if ( ! class_exists( 'Timber' ) ) {
 	add_action( 'admin_notices', function() {
 		echo '<div class="error"><p>Timber not activated. Make sure you activate the plugin in <a href="' . esc_url( admin_url( 'plugins.php#timber' ) ) . '">' . esc_url( admin_url( 'plugins.php') ) . '</a></p></div>';
