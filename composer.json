@@ -1,29 +1,64 @@
-
-//   "name": "upstatement/timber-starter-theme",
-//   "description": "Starter theme to build a Timber theme",
-//   "type":"wordpress-theme",
-//   "minimum-stability" : "stable",
-//   "authors": [
-//       {
-//           "name": "jarednova",
-//           "email": "jared@upstatement.com"
-//       }
-//   ],
-//   "repositories": [
-//     {
-//       "type": "composer",
-//       "url": "https://wpackagist.org"
-//     }
-//   ],
-//   "extra": {
-//   	"installer-paths": {
-//       "../../plugins/{$name}/": [
-//         "wpackagist-plugin/*",
-//         "type:wordpress-plugin"
-//       ]
-//   	}
-// 	},
-//   "require": {
-// 	  "wpackagist-plugin/timber-library": "0.22.*"
-//   }
-// }
+{
+  "name": "roostergrin/rg-boilerplate-plugins`",
+  "description": "WordPress plugins for rg-boilerplate",
+  "type":"wordpress-plugins",
+  "authors": [
+      {
+          "name": "satoru",
+          "email": "satoru@roostergrin.com"
+      }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    { 
+      "type": "package", 
+      "package": {  
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.4.1", 
+        "type": "wordpress-plugin",
+        "dist": { 
+          "type": "zip", 
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+        },
+        "require": {
+          "philippbaschke/acf-pro-installer": "^1.0", 
+          "composer/installers": "^1.0"
+        } 
+      } 
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/roostergrin/wp-pusher"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/roostergrin/wp-sync-db"
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "../../plugins/{$name}/": [
+        "wpackagist-plugin/*",
+        "type:wordpress-plugin"
+      ]
+    }
+  },
+  "config": {
+    "vendor-dir": "../../plugins"
+  },
+  "require": {
+    "wpackagist-plugin/timber-library": "0.22.*",
+    "wpackagist-plugin/contact-form-7": "^4.7",
+    "wpackagist-plugin/advanced-custom-fields": "^4.4",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.4",
+    "roostergrin/wp-pusher": "dev-master",
+    "roostergrin/wp-sync-db": "dev-master",
+    "wpackagist-plugin/contact-form-7": "^4.7",
+    "wpackagist-plugin/wp-google-maps": "^6.4.03",
+    "wpackagist-plugin/snazzy-maps": "^1.1.3",
+    "wpackagist-plugin/svg-support": "^2.3.6"
+  }
+}
