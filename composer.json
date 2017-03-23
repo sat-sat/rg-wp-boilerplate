@@ -56,7 +56,6 @@
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.4",
     "roostergrin/wp-pusher": "dev-master",
     "roostergrin/wp-sync-db": "dev-master",
-    "wpackagist-plugin/contact-form-7": "^4.7",
     "wpackagist-plugin/wp-google-maps": "^6.4.03",
     "wpackagist-plugin/snazzy-maps": "^1.1.3",
     "wpackagist-plugin/svg-support": "^2.3.6"
