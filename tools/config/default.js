@@ -8,7 +8,7 @@ export const client = {
       input: ['src/main.sass', 'src/**/*.{scss,sass}', 'src/sass/util/maps.sass', '!src/sass/_settings.scss', '!src/sass/vendors/**/*.{scss,sass}']
     },
     scripts: {
-      input: ['gulpfile.babel.js', 'tasks/**/*.js', 'src/js/**/*.js', '!src/main.js']
+      input: ['gulpfile.babel.js', 'tasks/**/*.js', 'src/**/*.js', '!src/main.js']
     }
   },
   scripts: {
