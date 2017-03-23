@@ -3,11 +3,11 @@
 **Note** that this project requires node v4.x.x or higher and npm 2.14.7. or higher
 
 ## RG-Boilerplate Overview  
-Server: `LAMP via MAMP`
-Tooling: `gulp`
-Methodologies: `BEM` -> sass
-Preprocessors: `timber+twig` -> php, `pug` -> html
-Package Managers: `yarn`, `composer`
+Server: `LAMP via MAMP`  
+Tooling: `gulp`  
+Methodologies: `BEM` -> sass  
+Preprocessors: `timber+twig` -> php, `pug` -> html  
+Package Managers: `yarn`, `composer`  
 
 ### Folder Structure Overview
 **WordPress Specific**
