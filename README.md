@@ -4,6 +4,14 @@
 
 ## Getting Started  
 
+##### MAMP setting  
+
+**Ports** 
+- Apache Port: 8888
+- Nginx Port: 7888
+- MySQL Port: 8889
+
+
 Download repo and install dependencies
 ```
 cd /path/to/wordpress/theme
