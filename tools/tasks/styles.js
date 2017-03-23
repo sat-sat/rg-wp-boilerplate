@@ -23,7 +23,8 @@ gulp.task('styles', ['sasslint'], () => {
     .pipe($.sassGlob())
     .pipe(!options.minify ? $.sourcemaps.init() : $.util.noop())
     .pipe($.sass({
-      indentedSyntax: true
+      indentedSyntax: true,
+      includePaths: './node_modules/bootstrap-sass/assets/stylesheets'
     }))
     .on('error', $.notify.onError())
     .pipe($.postcss([
