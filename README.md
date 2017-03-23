@@ -2,8 +2,7 @@
 
 **Note** that this project requires node v4.x.x or higher and npm 2.14.7. or higher
 
-### Getting Started  
----
+## Getting Started  
 
 Download repo and install dependencies
 ```
