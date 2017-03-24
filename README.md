@@ -4,6 +4,7 @@
 2. [Getting Started](#getting-started)
 3. [WordPress Project Setup](#wordpress-project-setup)
 4. [WordPress Deployment](#wordpress-deployment)
+5. [Git Commit Message Format](#git-commit-message-format)
 
 ## RG-Boilerplate Overview  
 Server: LAMP via [`MAMP`](https://www.mamp.info/en/)  
@@ -133,7 +134,8 @@ gulp build --env production
 4. Pull theme from git repo from live server  
 
 
-
+## Git Commit Message Format
+Though there is no best solution for git commit message formats I have been using commit message guideline from the [Erlang/OTP](https://github.com/erlang/otp/wiki/Writing-good-commit-messages) wiki page for general message formatting in conjunction with [AngularJS guideline](https://gist.github.com/brianclements/841ea7bffdb01346392c) for inserting types into the beginning of the message. Because this is highly opiniated it is subject to change to better fit the needs of our development process at Rooster Grin if need be.
 
 
 
