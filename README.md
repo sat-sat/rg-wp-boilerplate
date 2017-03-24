@@ -119,10 +119,10 @@ gulp build --env production
 1. Use BlogVault to migrate dev site to live server  
 
 **Option 2**  
-2. Manually set up WP site (new install) on live server, similar to 1st set of previous **WordPress Project Setup** section  
-3. Manually install all WordPress plugins on live server  
-4. Pull db from dev server to live server  
-5. Pull theme from git repo from live server  
+1. Manually set up WP site (new install) on live server, similar to 1st set of previous **WordPress Project Setup** section  
+2. Manually install all WordPress plugins on live server  
+3. Pull db from dev server to live server  
+4. Pull theme from git repo from live server  
 
 
 
