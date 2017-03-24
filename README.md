@@ -5,11 +5,11 @@
 ## RG-Boilerplate Overview  
 Server: `LAMP via MAMP`  
 Tooling: `gulp`  
-Methodologies: `BEM` -> sass, `componentization` -> general frontend dev process
-Preprocessors: `timber+twig` -> php, `pug` -> html, `sass + scss` -> css
+Methodologies: `BEM` -> sass, `componentization` -> general frontend dev process  
+Preprocessors: `timber+twig` -> php, `pug` -> html, `sass + scss` -> css  
 Package Managers: `yarn`, `composer`  
-Frameworks: `bootstrap`
-Javascript: `ES6`
+Frameworks: `bootstrap`  
+Javascript: `ES6`  
 
 ### Folder Structure Overview
 **WordPress Specific**
