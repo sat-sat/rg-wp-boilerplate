@@ -1,16 +1,12 @@
-
-
-**Note** that this project requires node v4.x.x or higher and npm 2.14.7. or higher
-
 ## RG-Boilerplate Overview  
-Server: `LAMP via MAMP`  
-Tooling: `gulp`  
-Methodologies: `BEM` -> sass, `componentization` -> general frontend dev process  
-Preprocessors: `timber+twig` -> php, `pug` -> html, `sass + scss` -> css  
-Package Managers: `yarn`, `composer`  
-Frameworks: `bootstrap`  
-Javascript: `ES6`  
-Linters: [`gulp-standard`](https://www.npmjs.com/package/gulp-standard) -> javascript, `gulp-sass-lint` -> sass  
+Server: LAMP via [`MAMP`](https://www.mamp.info/en/)  
+Tooling: [`gulp`](https://github.com/gulpjs/gulp/blob/master/docs/API.md)  
+Methodologies: [`BEM`](https://en.bem.info/methodology/quick-start/) -> sass, `componentization` -> general frontend dev process  
+Preprocessors: [`timber`](http://timber.github.io/timber/#your-first-timber-project) + [`twig`](http://twig.sensiolabs.org/) -> php, [`pug`](https://pugjs.org/api/getting-started.html) -> html, [`sass`](http://sass-lang.com/guide) + [`scss`](http://sass-lang.com/guide) -> css  
+Package Managers: [`yarn`](https://yarnpkg.com/en/), [`composer`](https://getcomposer.org/doc/00-intro.md)  
+Frameworks: [`bootstrap`](http://getbootstrap.com/css/)  
+Javascript: [`ES6`](https://github.com/lukehoban/es6features)  
+Linters: [`gulp-standard`](https://www.npmjs.com/package/gulp-standard) -> javascript, [`gulp-sass-lint`](https://www.npmjs.com/package/gulp-sass-lint) -> sass  
 
 ### Folder Structure Overview
 **WordPress Specific**
@@ -107,12 +103,6 @@ npm start
 # production build
 gulp build --env production
 ```
-
-
-**Note** that this project uses the [twig] template engine via [timber] for its views.
-
-[twig]: <http://twig.sensiolabs.org/?>
-[timber]: <http://timber.github.io/timber/>
 
 
 
