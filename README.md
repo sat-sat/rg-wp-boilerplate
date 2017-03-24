@@ -1,3 +1,7 @@
+## Table Of Contents  
+1. [RG-Boilerplate Overview](#rg-boilerplate-overview)
+2. [Folder Structure Overview](#folder-structure-overview)
+
 ## RG-Boilerplate Overview  
 Server: LAMP via [`MAMP`](https://www.mamp.info/en/)  
 Tooling: [`gulp`](https://github.com/gulpjs/gulp/blob/master/docs/API.md)  
