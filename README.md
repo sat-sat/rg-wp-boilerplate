@@ -104,11 +104,25 @@ npm start
 gulp build --env production
 ```
 
+## WordPress Project Setup  
 
+1. Set up dev site on test server (roostertest3.com)  
+2. Manually install all base plugins (look at composer.json file for list all php packages)  
+3. Setup local WordPress install (run full install as stated in **Getting Started** section  
+4. Pull remote site db from local install using [**WP Sync DB**](https://github.com/wp-sync-db/wp-sync-db)  
+5. Create private github repo in Rooster Grin account and push local theme to new repo  
+6. Install theme via repo on remote site using [**WP Pusher**](http://docs.wppusher.com/article/17-setting-up-a-plugin-or-theme-on-github)  
+7. Start woking locally. Push files and db as necessary  
 
+## WordPress Deployment  
+**Option 1**  
+1. Use BlogVault to migrate dev site to live server  
 
-
-
+**Option 2**  
+2. Manually set up WP site (new install) on live server, similar to 1st set of previous **WordPress Project Setup** section  
+3. Manually install all WordPress plugins on live server  
+4. Pull db from dev server to live server  
+5. Pull theme from git repo from live server  
 
 
 
