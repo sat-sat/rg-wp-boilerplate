@@ -1,8 +1,1 @@
-{% if menu %}
-<ul class="nav-desktop__nav">{% for item in menu %}
-  <li class="{{ item.classes | join(' ') }} {{ item.slug }}"><a href="{{ item.get_link }}">{{ item.title }}</a>{% if item.get_children %}
-    <ul class="nav-desktop__sub-nav">{% for child in item.get_children %}
-      <li class="{{ child.classes | join(' ') }}"><a href="{{ child.get_link }}">{{ child.title }}</a></li>{% endfor %}
-    </ul>{% endif %}
-  </li>{% endfor %}
-</ul>{% endif %}
+{% if menu %}<ul class="nav-desktop__nav">{% for item in menu %}<li class="{{ item.classes | join(' ') }} {{ item.slug }}"><a href="{{ item.get_link }}">{{ item.title }}</a>{% if item.get_children %}<ul class="nav-desktop__sub-nav">{% for child in item.get_children %}<li class="{{ child.classes | join(' ') }}"><a href="{{ child.get_link }}">{{ child.title }}</a></li>{% endfor %}</ul>{% endif %}</li>{% endfor %}</ul>{% endif %}

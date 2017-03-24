@@ -110,7 +110,7 @@ npm run gulp build
 npm start
 
 # production build
-gulp build --env production
+npm run production
 ```
 
 ## WordPress Project Setup  

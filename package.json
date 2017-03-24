@@ -5,9 +5,7 @@
   "scripts": {
     "start": "gulp",
     "gulp": "gulp",
-    "gulp:component": "gulp component --name",
-    "gulp:page": "gulp page --name",
-    "gulp:del": "gulp delete"
+    "production": "gulp build --env production"
   },
   "author": "Satoru <satoru@roostergrin.com>",
   "license": "UNLICENSED",
