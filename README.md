@@ -10,6 +10,7 @@ Preprocessors: `timber+twig` -> php, `pug` -> html, `sass + scss` -> css
 Package Managers: `yarn`, `composer`  
 Frameworks: `bootstrap`  
 Javascript: `ES6`  
+Linters: [`gulp-standard`](https://www.npmjs.com/package/gulp-standard) -> javascript, `gulp-sass-lint` -> sass  
 
 ### Folder Structure Overview
 **WordPress Specific**
