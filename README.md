@@ -1,6 +1,9 @@
 ## Table Of Contents  
 1. [RG-Boilerplate Overview](#rg-boilerplate-overview)
-2. [Folder Structure Overview](#folder-structure-overview)
+    - [Folder Structure Overview](#folder-structure-overview)
+2. [Getting Started](#getting-started)
+3. [WordPress Project Setup](#wordpress-project-setup)
+4. [WordPress Deployment](#wordpress-deployment)
 
 ## RG-Boilerplate Overview  
 Server: LAMP via [`MAMP`](https://www.mamp.info/en/)  
