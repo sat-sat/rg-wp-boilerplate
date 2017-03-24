@@ -74,7 +74,7 @@ All development related folders/files are located in the `./src` folder.
 
 Download repo and install dependencies
 ```
-# got to local WordPress theme folder and clone repo and rename folder to client website URL
+# go to local WordPress theme folder and clone repo and rename folder to client website URL
 cd /path/to/wordpress/theme
 git clone git@github.com:roostergrin/rg-boilderplate-wp.git client-site.com
 
