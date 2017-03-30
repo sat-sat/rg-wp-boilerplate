@@ -1,4 +1,3 @@
-// import $ from 'jquery'
 // import slick from 'slick-carousel'
 
 import { Fog } from './components/components'

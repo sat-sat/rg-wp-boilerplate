@@ -21,6 +21,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+// class export example --------------------------
 var Fog = exports.Fog = function () {
   function Fog(name) {
     _classCallCheck(this, Fog);
@@ -38,13 +39,21 @@ var Fog = exports.Fog = function () {
   return Fog;
 }();
 
+// function export example -----------------------
+// export function Fog (name) {
+//   this.name = name
+// }
+
+// Fog.prototype.say = function (msg) {
+//   console.log(this.name + ' says: ' + msg)
+// }
+
 },{}],3:[function(require,module,exports){
 'use strict';
 
 var _components = require('./components/components');
 
-var karl = new _components.Fog('Karl'); // import $ from 'jquery'
-// import slick from 'slick-carousel'
+var karl = new _components.Fog('Karl'); // import slick from 'slick-carousel'
 
 karl.say('I love SF!!');
 
