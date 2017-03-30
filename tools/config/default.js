@@ -49,5 +49,10 @@ export const client = {
     },
     output: 'views/icons',
     watch: 'src/icons/**/*.svg'
+  },
+  videos: {
+    input: ['src/videos/**/*.*'],
+    output: 'static/videos',
+    watch: 'src/vides/**/*.*'
   }
 }
