@@ -1,7 +1,7 @@
 | {% extends 'layout.twig' %}
 
 | {% block content %}
-section(id='post-{{post.ID}}' class='post-type-{{post.post_type}}')
+section(class='{{ post.slug }}')
 	//- | {{post.title}}
-	| {{post.content}}
+	| {{ post.content }}
 | {% endblock %}

@@ -2,7 +2,7 @@
 /**
  * Hide the main editor on specific pages
  */
-define('EDITOR_HIDE_PAGE_TITLES', json_encode(array('Home', 'About', 'Services', 'General Remodeling', 'Kitchens', 'Bathrooms', 'Design Build', 'Portfolio', 'Testimonials', 'Contact')));
+define('EDITOR_HIDE_PAGE_TITLES', json_encode(array('Home', 'About', 'Contact')));
 // define('EDITOR_HIDE_PAGE_TEMPLATES', json_encode(array('template-cars.php')));
 
 /**
