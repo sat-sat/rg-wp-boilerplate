@@ -5,7 +5,7 @@ export const options = {
 export const client = {
   lint: {
     styles: {
-      input: ['src/main.sass', 'src/**/*.{scss,sass}', 'src/sass/util/maps.sass', '!src/sass/_settings.scss', '!src/sass/vendors/**/*.{scss,sass}']
+      input: ['src/main.sass', 'src/**/*.{scss,sass}', 'src/sass/util/maps.sass', '!src/sass/vendors/**/*.{scss,sass}']
     },
     scripts: {
       input: ['gulpfile.babel.js', 'tasks/**/*.js', 'src/**/*.js', '!src/main.js']
