@@ -2,13 +2,13 @@
 
 | {% block content %}
 .blog-single
-	article.blog-single__container(id='post-{{ post.ID }}' class='post-type-{{ post.post_type }}')
+	article.blog-single__container(id='post-{{ post.ID }}' class='{{ post.slug }}')
 		section.blog-single__content
 			h1.article-h1
 				| {{ post.title }}
 			p.blog-single__author
 				span By&amp;
-				a(href='{{post.author.path}}')
+				a(href='{{ post.author.path }}')
 					| {{ post.author.name }}
 				span &bull;&amp;
 				| {{ post.post_date | date }}

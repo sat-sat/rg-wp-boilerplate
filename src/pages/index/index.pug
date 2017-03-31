@@ -1,7 +1,7 @@
 | {% extends 'layout.twig' %}
 
 | {% block content %}
-section(id='post-{{post.ID}}' class='post-type-{{post.post_type}}')
+section(class='{{ post.slug }}')
 	| {{post.title}}
 	| {% for post in posts %}
 	| {% include ['components/custom-preview-'~post.post_type~'.twig', 'components/custom-preview.twig'] %}
