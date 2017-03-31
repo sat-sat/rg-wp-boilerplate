@@ -9,7 +9,7 @@ import browserSync from 'browser-sync'
 
 const $ = plugins()
 const projectRoot = '/rg-boilerplate'
-const assetPath = '/wp-content/themes/luxeremodel.com/static/images/'
+const assetPath = '/wp-content/themes/rg-boilerplate/static/images/'
 
 gulp.task('sasslint', () => {
   return gulp.src(client.lint.styles.input)
