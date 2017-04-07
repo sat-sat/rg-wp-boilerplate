@@ -1,1 +1,5 @@
-<div class="custom-comment block-comment {{ comment.comment_type }}" id="block-comment-{{ comment.ID }}"><h5 class="custom-comment__author">{{ comment.author.name }} says</h5><div class="custom-comment__content">{{ comment_content|wpautop }}</div></div>
+
+<div class="custom-comment block-comment {{ comment.comment_type }}" id="block-comment-{{ comment.ID }}">
+  <h5 class="custom-comment__author">{{ comment.author.name }} says</h5>
+  <div class="custom-comment__content">{{ comment_content|wpautop }}</div>
+</div>

@@ -1,2 +1,7 @@
-<article class="custom-preview custom-preview custom-preview-{{ post.post_type }}" id="custom-preview-{{ post.ID }}">{% block content %}<h2 class="custom-preview__title"><a href="{{ post.link }}">{{ post.title }}</a></h2><p class="custom-preview__copy">{{ post.get_preview }}</p>{% if post.get_thumbnail %}<img class="custom-preview__image" src="{{ post.thumbnail.src }}"/>{% endif %}
-{% endblock %}</article>
+
+<article class="custom-preview custom-preview custom-preview-{{ post.post_type }}" id="custom-preview-{{ post.ID }}">{% block content %}
+  <h2 class="custom-preview__title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+  <p class="custom-preview__copy">{{ post.get_preview }}</p>{% if post.get_thumbnail %}<img class="custom-preview__image" src="{{ post.thumbnail.src }}"/>
+  {% endif %}
+  {% endblock %}
+</article>
