@@ -1,3 +1,9 @@
+
 {% extends 'custom-preview.twig' %}
-{% block content %}<div class="custom-preview-post"><h2 class="custom-preview-post__title"><a href="{{ post.link }}">{{ post.title }}</a></h2><p class="custom-preview-post__copy">{{ post.get_preview(25) }}</p>{% if post.thumbnail.src %}<img class="custom-preview-post__image" src="{{ post.thumbnail.src }}"/>{% endif %}
-{% endblock %}</div>
+{% block content %}
+<div class="custom-preview-post">
+  <h2 class="custom-preview-post__title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+  <p class="custom-preview-post__copy">{{ post.get_preview(25) }}</p>{% if post.thumbnail.src %}<img class="custom-preview-post__image" src="{{ post.thumbnail.src }}"/>
+  {% endif %}
+  {% endblock %}
+</div>
