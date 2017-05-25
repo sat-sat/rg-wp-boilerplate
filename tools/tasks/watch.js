@@ -17,4 +17,7 @@ gulp.task('watch', () => {
 
   // images
   gulp.watch(client.images.watch, ['images'])
+
+  // videos
+  gulp.watch(client.videos.watch, ['videos'])
 })
