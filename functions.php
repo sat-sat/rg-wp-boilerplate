@@ -46,6 +46,7 @@ class StarterSite extends TimberSite {
 		$context['foo'] = 'bar';
 		// static image path
 		$context['img'] = get_template_directory_uri() . '/static/images';
+		$context['video'] = get_template_directory_uri() . '/static/videos';
 		$context['icons-no-color'] = get_template_directory_uri() . '/static/icons/no-color.svg';
 		$context['stuff'] = 'I am a value set in your functions.php file';
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
