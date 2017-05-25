@@ -43,10 +43,8 @@ html(lang='{{ site.charset }}')
 
     header(class='header')
       | {% block header %}
-      .nav-desktop
-        | {% include 'components/nav-desktop.twig' %}
-      //- .nav-mobile
-      //-   | {% include 'components/nav-mobile.twig' %}
+      | {% include 'components/nav-desktop.twig' %}
+      //- | {% include 'components/nav-mobile.twig' %}
       | {% endblock %}
 
     main.main-content(role='main')
