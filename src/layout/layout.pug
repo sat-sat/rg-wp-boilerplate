@@ -5,24 +5,36 @@ doctype html
 <!--[if gt IE 8]><!--><html class="no-js" {{ site.language_attributes }}> <!--<![endif]-->
 html(lang='{{ site.charset }}')
   head
-    meta(charset='UTF-8')
     title
       | {% if wp_title %}
       | {{ wp_title }} - {{ site.name }}
       | {% else %}
       | {{ site.name }}
       | {% endif %}
-    meta(name='description' content='{{ site.description }}')
+
+    // General META
+    meta(charset='UTF-8')
     meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(rel='pingback' href='{{ site.pingback_url }}')
+
+    // Responsive META
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+    // SEO META
+    meta(name='description' content='{{ site.description }}')
+
+    // Favicon
+    //- link(rel='icon', href='{{ img }}/client-favicon.png')
+
+    // Load Typekit Scripts
     //- script(src='https://use.typekit.net/pjw4qib.js')
     //- script.
     //-   try{Typekit.load({
     //-     async: true,
     //-     classes: false
     //-   });}catch(e){}
+
     // Google Tag Manager
     //- script.
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
