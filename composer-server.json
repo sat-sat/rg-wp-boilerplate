@@ -13,22 +13,6 @@
       "type": "composer",
       "url": "https://wpackagist.org"
     },
-    { 
-      "type": "package", 
-      "package": {  
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.4.1", 
-        "type": "wordpress-plugin",
-        "dist": { 
-          "type": "zip", 
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
-        },
-        "require": {
-          "philippbaschke/acf-pro-installer": "^1.0", 
-          "composer/installers": "^1.0"
-        } 
-      } 
-    },
     {
       "type": "git",
       "url": "https://github.com/roostergrin/wp-pusher"
@@ -53,7 +37,6 @@
     "wpackagist-plugin/timber-library": "0.22.*",
     "wpackagist-plugin/contact-form-7": "^4.7",
     "wpackagist-plugin/advanced-custom-fields": "^4.4",
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.4",
     "roostergrin/wp-pusher": "dev-master",
     "roostergrin/wp-sync-db": "dev-master",
     "wpackagist-plugin/wp-google-maps": "^6.4.03",
